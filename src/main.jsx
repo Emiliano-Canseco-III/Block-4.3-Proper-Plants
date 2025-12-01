@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import "./Stylesheets/index.css";
+import "./Stylesheets/cart.css";
+import "./Stylesheets/plant.css";
 import App from "./Components/App.jsx";
 
 createRoot(document.getElementById("root")).render(
