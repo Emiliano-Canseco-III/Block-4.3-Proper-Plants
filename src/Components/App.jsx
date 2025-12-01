@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PlantsList from "./Plants/PlantsList";
 import Cart from "./Cart/Cart";
-import { plants } from "../data";
+import { plants } from "../data.js";
 
 // Initial cart state is an empty array
 function App() {
