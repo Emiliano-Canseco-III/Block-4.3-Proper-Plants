@@ -1,0 +1,56 @@
+/* Cart Section */
+.cart-section {
+  flex: 1; /* Take up less space than the plants */
+  min-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  position: sticky; /* Keep the cart visible when scrolling */
+  top: 20px;
+  height: fit-content;
+}
+
+/* Individual Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-controls button {
+  background: none;
+  border: 1px solid #ccc;
+  color: #333;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 1; /* Center the +/- text */
+}
+
+.item-quantity {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+}

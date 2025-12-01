@@ -1,0 +1,50 @@
+/* Plants Section */
+.plants-section {
+  flex: 3; /* Take up more space */
+  padding-right: 20px;
+}
+
+.plants-grid {
+  display: grid;
+  /* Create responsive columns that are a minimum of 200px wide */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Plant Card */
+.plant-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover Effect for interaction */
+.plant-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plant-emoji {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.plant-card button {
+  background-color: #8fbc8f; /* Light Green */
+  color: #384c23;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.plant-card button:hover {
+  background-color: #79a379;
+}
