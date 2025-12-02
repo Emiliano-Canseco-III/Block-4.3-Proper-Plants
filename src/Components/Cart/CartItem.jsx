@@ -1,5 +1,5 @@
 function CartItem({ item, onUpdateQuantity }) {
-  const { id, name, emoji, quantity } = item;
+  const { id, name, image, quantity } = item;
 
   // Handler for decrementing the quantity
   const handleDecrement = () => {
@@ -15,7 +15,7 @@ function CartItem({ item, onUpdateQuantity }) {
 
   return (
     <div className="cart-item">
-      <span className="item-emoji">{emoji}</span>
+      <span className="item-emoji">{image}</span>
       <span className="item-name">{name}</span>
       <div className="item-controls">
         <button onClick={handleDecrement} aria-label="Decrement quantity">
