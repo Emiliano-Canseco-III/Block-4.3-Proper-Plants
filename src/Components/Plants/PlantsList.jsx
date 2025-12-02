@@ -1,6 +1,6 @@
 import PlantCard from "./PlantCard";
 
-function PlantsList({ plants, cart, onAddToCart }) {
+function PlantsList({ plants, onAddToCart }) {
   return (
     <section className="plants-section">
       <h2>Available Plants</h2>
